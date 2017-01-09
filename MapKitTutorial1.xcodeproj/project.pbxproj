@@ -14,6 +14,8 @@
 		EFDF17F61E2354C700F5F1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDF17F41E2354C700F5F1A0 /* LaunchScreen.storyboard */; };
 		EFDF18011E2354C800F5F1A0 /* MapKitTutorial1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF18001E2354C800F5F1A0 /* MapKitTutorial1Tests.swift */; };
 		EFDF180C1E2354C900F5F1A0 /* MapKitTutorial1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF180B1E2354C900F5F1A0 /* MapKitTutorial1UITests.swift */; };
+		EFDF181B1E23554200F5F1A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDF181A1E23554200F5F1A0 /* MapKit.framework */; };
+		EFDF181D1E235C1D00F5F1A0 /* homeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDF181C1E235C1D00F5F1A0 /* homeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		EFDF18071E2354C900F5F1A0 /* MapKitTutorial1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitTutorial1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDF180B1E2354C900F5F1A0 /* MapKitTutorial1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitTutorial1UITests.swift; sourceTree = "<group>"; };
 		EFDF180D1E2354CA00F5F1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFDF181A1E23554200F5F1A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EFDF181C1E235C1D00F5F1A0 /* homeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDF181B1E23554200F5F1A0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				EFDF17FF1E2354C800F5F1A0 /* MapKitTutorial1Tests */,
 				EFDF180A1E2354C900F5F1A0 /* MapKitTutorial1UITests */,
 				EFDF17E91E2354C400F5F1A0 /* Products */,
+				EFDF18191E23554200F5F1A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +105,7 @@
 			children = (
 				EFDF17EB1E2354C400F5F1A0 /* AppDelegate.swift */,
 				EFDF17ED1E2354C500F5F1A0 /* ViewController.swift */,
+				EFDF181C1E235C1D00F5F1A0 /* homeAnnotation.swift */,
 				EFDF17EF1E2354C600F5F1A0 /* Main.storyboard */,
 				EFDF17F21E2354C700F5F1A0 /* Assets.xcassets */,
 				EFDF17F41E2354C700F5F1A0 /* LaunchScreen.storyboard */,
@@ -123,6 +130,14 @@
 				EFDF180D1E2354CA00F5F1A0 /* Info.plist */,
 			);
 			path = MapKitTutorial1UITests;
+			sourceTree = "<group>";
+		};
+		EFDF18191E23554200F5F1A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFDF181A1E23554200F5F1A0 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +209,11 @@
 					EFDF17E71E2354C400F5F1A0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EFDF17FB1E2354C800F5F1A0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -260,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFDF17EE1E2354C500F5F1A0 /* ViewController.swift in Sources */,
+				EFDF181D1E235C1D00F5F1A0 /* homeAnnotation.swift in Sources */,
 				EFDF17EC1E2354C400F5F1A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
